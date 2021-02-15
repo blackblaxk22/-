@@ -1,0 +1,12 @@
+		String [] arr = new String[5];
+		Random rd = new Random();
+
+		for(int i=0; i<5; i++) {
+			int ranNum;
+			ranNum = rd.nextInt(99)+1;
+			arr[i]=Integer.toString(ranNum);
+			System.out.println(ranNum+"의 값:");
+
+			for(int u=0; u<9; u++) {
+				int g= (u+1)*ranNum;
+				System.out.println(g);
